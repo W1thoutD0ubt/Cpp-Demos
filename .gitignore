@@ -1,0 +1,6 @@
+.vscode/
+
+*.o
+
+/thread_test/
+/tmp/
