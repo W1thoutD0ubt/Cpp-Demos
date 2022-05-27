@@ -17,7 +17,7 @@ char *itostr(int a, char *str)
         a = (a - c) / 10;
         str[tpow - (++index)] = c + '0';
     } while (a);
-    str[++index] = '\0';
+    str[index] = 0;
     return str;
 }
 
@@ -43,5 +43,6 @@ char *init_str_from_stack(unsigned int size, char *src)
         target[pos] = src[pos];
         pos++;
     }
+    target[pos] = 0;
     return target;
 }
