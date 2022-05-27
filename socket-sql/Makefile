@@ -4,10 +4,10 @@ CC=gcc
 CXX=g++
 
 TARGET=server
-C_SRC=access_sql.c server.c
-C_OBJ=access_sql.o server.o
+C_SRC=access_sql.c server.c my_utils.c
+C_OBJ=access_sql.o server.o my_utils.o
 
-IC_CMD=-I /usr/include/mysql
+IC_CMD=-I /usr/include/mysql -I . 
 
 # the params `-L. -lmysqlclient` tells the compiler to
 # search for library at current diretory, and link the lib
